@@ -172,6 +172,14 @@ func UserIndex(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte("Welcome, User."))
 }
 
+func Add(x, y int) (res int) {
+	return x + y
+}
+
+func Subtract(x, y int) (res int) {
+	return x - y
+}
+
 func main() {
 	initDB()
 	CreateRouter()
